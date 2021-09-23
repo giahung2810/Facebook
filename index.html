@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SocialBook</title>
+    <title>FaceBook</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -35,10 +35,55 @@
                         <img src="assets/img/video.png" alt="">
                     </li>
                 </ul>
-                <div class="nav-user-icon online">
+                <div class="nav-user-icon online" onclick="settingsMenuToggle()">
                     <img src="./assets/img/profile-pic.jpg" alt="">
                 </div>
             </div>
+
+            <div class="settings-menu">
+                <div id="dark-btn">
+                    <span>
+
+                    </span>
+                </div>
+
+                <div class="settings-menu-inner">
+                    <div class="user-profile">
+                        <img src="./assets/img/profile-pic.jpg" alt="">
+                        <div>
+                            <p>Gia Hưng</p>
+                            <a href="">See your profile</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user-profile">
+                        <img src="./assets/img/feedback.png" alt="">
+                        <div>
+                            <p>Give Feedback</p>
+                            <a href="">Help us to improve the new design</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="settings-links">
+                        <img src="./assets/img/setting.png" alt="" class="settings-icon">
+                        <a href="#">Settings & Privacy <img src="./assets/img/arrow.png" alt="" width=10px></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="./assets/img/help.png" alt="" class="settings-icon">
+                        <a href="#">Help & Support <img src="./assets/img/arrow.png" alt="" width=10px></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="./assets/img/display.png" alt="" class="settings-icon">
+                        <a href="#">Display & Accessibility <img src="./assets/img/arrow.png" alt="" width=10px></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="./assets/img/logout.png" alt="" class="settings-icon">
+                        <a href="#">Logout <img src="./assets/img/arrow.png" alt="" width=10px></a>
+                    </div>
+
+                </div>
+            </div>
+
         </nav>
     </header>
 
@@ -242,8 +287,44 @@
                         </div>
                     </div>
                 </div>
-                
-    
+                <div class="grid__row">
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="./assets/img/tu-4.jpg" alt="">
+                                <div>
+                                    <div class="setting-ava">
+                                        <p>Nguyễn Minh Tú</p>
+                                        <span></span>
+                                    </div>
+                                    <span>June 24 2021, 15:52 pm</span>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+
+                        <p class="post-text"><a href="#">@Lê Hoàng Lê</a></p>
+                        <img src="./assets/img/tu-2.jpg" class="post-img" alt="">
+
+                        <div class="activity-post">
+                            <div class="likes">
+                                    <img src="./assets/img/haha-icon.png" alt=""> Bạn và 176K người khác
+                            </div>
+                            <div class="cmt-share">
+                                <span>2K bình luận</span>
+                                <span>173 lượt chia sẻ</span>
+                            </div>
+                        </div>
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="./assets/img/like-blue.png" alt=""></div>
+                                <div><img src="./assets/img/comments.png" alt=""></div>
+                                <div><img src="./assets/img/share.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="load-more-btn">Load More</button>
             </div>
             <!-- right-sidebar -->
             <div class="right-sidebar">
@@ -311,6 +392,15 @@
 
             </div>
         </div>
+
+
+
     </div>
+    <div class="footer">
+        
+    </div>
+    <script src="script.js">
+
+    </script>
 </body>
 </html>

@@ -1,3 +1,17 @@
+:root{
+    --body-color:#efefef;
+    --nav-color: #1876f2;
+    --bg-color: #fff;
+}
+
+.dark-theme{
+    --body-color:#0a0a0a;
+    --nav-color: #000;
+    --bg-color: #000;
+}
+
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -5,8 +19,10 @@
     box-sizing: border-box;
     user-select:none;
 }
+
 body{
-    background-color: #efefef;
+    background-color: var(--body-color);
+    transition: background 0.3s;
     width: 100%;
 }
 div{
@@ -29,7 +45,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1876f2;
+    background-color: var(--nav-color);
     padding: 5px 18px;
     position: sticky;
     top:0;
